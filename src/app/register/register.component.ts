@@ -48,12 +48,38 @@ export class RegisterComponent implements OnInit {
     }
 
     this.http
-      .post<any>('https://angularmoviewebsite.onrender.com/register', this.registerForm.value)
+      .get<any>('https://angularmoviewebsite.onrender.com/register')
       .subscribe(
-        (result) => {
-          alert('Register Successful !!');
-          this.registerForm.reset();
-          this.router.navigate(['signin']);
+        (users) => {
+          const emailExists = users.some(
+            (user: any) => user.email === this.registerForm.value.email
+          );
+          const usernameExists = users.some(
+            (user: any) => user.userName === this.registerForm.value.userName
+          );
+
+          if (emailExists) {
+            alert('Email already exists!');
+            return;
+          }
+
+          if (usernameExists) {
+            alert('Username already exists!');
+            return;
+          }
+
+          this.http
+            .post<any>('https://angularmoviewebsite.onrender.com/register', this.registerForm.value)
+            .subscribe(
+              (result) => {
+                alert('Register Successful !!');
+                this.registerForm.reset();
+                this.router.navigate(['signin']);
+              },
+              (err) => {
+                alert('Something went wrong');
+              }
+            );
         },
         (err) => {
           alert('Something went wrong');
