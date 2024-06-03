@@ -1,41 +1,56 @@
-<!-- <p>sign-in works!</p> -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title text-center mb-4">Sign In</h3>
+          <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form2Example1">Email address</label>
+              <input
+                type="email"
+                formControlName="email"
+                id="form2Example1"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': loginForm.get('email')?.invalid && loginForm.get('email')?.touched }"
+              />
+              <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="invalid-feedback">
+                <span *ngIf="loginForm.get('email')?.errors?.['required']">Email is required.</span>
+                <span *ngIf="loginForm.get('email')?.errors?.['email']">Please enter a valid email address.</span>
+              </div>
+            </div>
 
-<div class="container">
-  <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
-    <!-- Email input -->
-    <div data-mdb-input-init class="form-outline mb-4">
-      <label class="form-label" for="form2Example1">Email address</label>
-      <input
-        type="email"
-        formControlName="email"
-        id="form2Example1"
-        class="form-control"
-      />
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form2Example2">Password</label>
+              <input
+                type="password"
+                formControlName="password"
+                id="form2Example2"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': loginForm.get('password')?.invalid && loginForm.get('password')?.touched }"
+              />
+              <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="invalid-feedback">
+                Password is required.
+              </div>
+            </div>
+
+            <!-- Submit button -->
+            <button
+              type="submit"
+              class="btn btn-primary btn-block mb-4"
+              [disabled]="loginForm.invalid"
+            >
+              Login
+            </button>
+          </form>
+          <!-- Register link -->
+          <div class="text-center">
+            <p>New User? <a routerLink="/register">Register</a></p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Password input -->
-    <div data-mdb-input-init class="form-outline mb-4">
-      <label class="form-label" for="form2Example2">Password</label>
-      <input
-        type="password"
-        formControlName="password"
-        id="form2Example2"
-        class="form-control"
-      />
-    </div>
-
-    <!-- Submit button -->
-    <button
-      type="submit"
-      data-mdb-button-init
-      data-mdb-ripple-init
-      class="btn btn-primary btn-block mb-4"
-    >
-      Login
-    </button>
-  </form>
-  <!-- Register buttons -->
-  <div class="text-center">
-    <p>New User? <a routerLink="/register">Register</a></p>
   </div>
 </div>

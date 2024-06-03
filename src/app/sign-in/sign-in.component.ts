@@ -27,7 +27,11 @@ export class SignInComponent implements OnInit {
   }
 
   loginUser() {
-    console.log(this.loginForm.value);
+    if (this.loginForm.invalid) {
+      this.loginForm.markAllAsTouched();
+      return;
+    }
+
     this.http.get<any>('https://angularmoviewebsite.onrender.com/register').subscribe(
       (result) => {
         const user = result.find((a: any) => {

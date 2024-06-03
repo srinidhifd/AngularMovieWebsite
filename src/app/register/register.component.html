@@ -1,76 +1,104 @@
-<div class="container">
-  <form [formGroup]="registerForm" (ngSubmit)="registerUser()">
-    <div data-mdb-input-init class="form-outline mb-4">
-      <label class="form-label" for="form2Example1">Full Name</label>
-      <input
-        type="text"
-        formControlName="fullName"
-        id="form2Example1"
-        class="form-control"
-        required
-      />
-    </div>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title text-center mb-4">Register</h3>
+          <form [formGroup]="registerForm" (ngSubmit)="registerUser()">
+            <!-- Full Name input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="fullName">Full Name</label>
+              <input
+                type="text"
+                formControlName="fullName"
+                id="fullName"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': registerForm.get('fullName')?.invalid && registerForm.get('fullName')?.touched }"
+              />
+              <div *ngIf="registerForm.get('fullName')?.invalid && registerForm.get('fullName')?.touched" class="invalid-feedback">
+                Full Name is required.
+              </div>
+            </div>
 
-    <!-- Email input -->
-    <div data-mdb-input-init class="form-outline mb-4">
-      <label class="form-label" for="form2Example1">Email address</label>
-      <input
-        type="email"
-        formControlName="email"
-        id="form2Example1"
-        class="form-control"
-        required
-      />
-    </div>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="email">Email address</label>
+              <input
+                type="email"
+                formControlName="email"
+                id="email"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': registerForm.get('email')?.invalid && registerForm.get('email')?.touched }"
+              />
+              <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched" class="invalid-feedback">
+                <span *ngIf="registerForm.get('email')?.errors?.['required']">Email is required.</span>
+                <span *ngIf="registerForm.get('email')?.errors?.['email']">Please enter a valid email address.</span>
+              </div>
+            </div>
 
-    <!--User Name-->
-    <div data-mdb-input-init class="form-outline mb-4">
-      <label class="form-label" for="form2Example1">User Name</label>
-      <input
-        type="text"
-        formControlName="userName"
-        id="form2Example1"
-        class="form-control"
-        required
-      />
-    </div>
+            <!-- User Name input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="userName">User Name</label>
+              <input
+                type="text"
+                formControlName="userName"
+                id="userName"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': registerForm.get('userName')?.invalid && registerForm.get('userName')?.touched }"
+              />
+              <div *ngIf="registerForm.get('userName')?.invalid && registerForm.get('userName')?.touched" class="invalid-feedback">
+                User Name is required.
+              </div>
+            </div>
 
-    <!-- Password input -->
-    <div data-mdb-input-init class="form-outline mb-4">
-      <label class="form-label" for="form2Example2">Password</label>
-      <input
-        type="password"
-        formControlName="password"
-        id="form2Example2"
-        class="form-control"
-        required
-      />
-    </div>
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="password">Password</label>
+              <input
+                type="password"
+                formControlName="password"
+                id="password"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': registerForm.get('password')?.invalid && registerForm.get('password')?.touched }"
+              />
+              <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched" class="invalid-feedback">
+                Password is required.
+              </div>
+            </div>
 
-    <!-- Password input -->
-    <div data-mdb-input-init class="form-outline mb-4">
-      <label class="form-label" for="form2Example2">Confirm Password</label>
-      <input
-        type="password"
-        formControlName="confirmPassword"
-        id="form2Example2"
-        class="form-control"
-        required
-      />
-    </div>
+            <!-- Confirm Password input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                formControlName="confirmPassword"
+                id="confirmPassword"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': registerForm.get('confirmPassword')?.invalid && registerForm.get('confirmPassword')?.touched }"
+              />
+              <div *ngIf="registerForm.get('confirmPassword')?.invalid && registerForm.get('confirmPassword')?.touched" class="invalid-feedback">
+                Confirm Password is required.
+              </div>
+              <div *ngIf="registerForm.errors?.['passwordMismatch'] && registerForm.get('confirmPassword')?.touched" class="text-danger">
+                Passwords do not match.
+              </div>
+            </div>
 
-    <!-- Submit button -->
-    <button
-      type="submit"
-      data-mdb-button-init
-      data-mdb-ripple-init
-      class="btn btn-primary btn-block mb-4"
-    >
-      Register
-    </button>
-  </form>
-  <!-- Register buttons -->
-  <div class="text-center">
-    <p>Already Registered? <a routerLink="/signin">Sign In</a></p>
+            <!-- Submit button -->
+            <button
+              type="submit"
+              class="btn btn-primary btn-block mb-4"
+              [disabled]="registerForm.invalid"
+            >
+              Register
+            </button>
+          </form>
+          <!-- Sign In link -->
+          <div class="text-center">
+            <p>Already Registered? <a routerLink="/signin">Sign In</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
