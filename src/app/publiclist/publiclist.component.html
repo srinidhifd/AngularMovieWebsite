@@ -1,0 +1,50 @@
+<div class="container mt-4">
+  <div class="row mb-3">
+    <div class="col-12 text-center">
+      <button class="btn btn-success back-home-btn" routerLink="/home">
+        <i class="bi bi-arrow-left-circle"></i> Back to Home
+      </button>
+    </div>
+  </div>
+  <div class="row" *ngIf="publicList.length > 0">
+    <div class="col-md-4" *ngFor="let movie of publicList">
+      <div class="card mb-4 shadow-sm">
+        <img
+          [src]="
+            movie.Poster !== 'N/A' ? movie.Poster : 'assets/imageNotFound.png'
+          "
+          class="card-img-top"
+          alt="Movie Poster"
+        />
+        <div class="card-body fixed-height">
+          <h5 class="card-title">{{ movie.Title }}</h5>
+          <p class="card-text">
+            <small class="text-muted"
+              >{{ movie.Year }} •
+              <strong>{{ movie.imdbRating }}/10</strong></small
+            >
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <button
+              class="btn btn-primary"
+              [routerLink]="['/moviedetails', movie.imdbID]"
+            >
+              Details
+            </button>
+            <button
+              class="btn btn-danger"
+              (click)="removeFromPublicList(movie)"
+            >
+              <i class="bi bi-trash3-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Show a message if no movies found -->
+  <div class="text-center mt-5" *ngIf="publicList.length === 0">
+    <p>No movies found</p>
+  </div>
+</div>

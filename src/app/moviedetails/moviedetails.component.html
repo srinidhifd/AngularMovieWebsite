@@ -1,0 +1,66 @@
+<div class="container mt-4">
+  <div class="row mb-3">
+    <div class="col-12 text-center">
+      <button class="btn btn-success back-home-btn" routerLink="/home">
+        <i class="bi bi-arrow-left-circle"></i> Back to Home
+      </button>
+    </div>
+  </div>
+  <div class="container d-flex justify-content-center">
+    <div class="card mb-3 shadow-sm" style="max-width: 700px">
+      <div class="row no-gutters">
+        <div class="col-6">
+          <img
+            [src]="
+              movie.Poster !== 'N/A' ? movie.Poster : 'assets/imageNotFound.png'
+            "
+            class="card-img"
+            alt="Poster"
+          />
+        </div>
+        <div class="col-6">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="card-title mb-0">{{ movie.Title }}</h5>
+              <select
+                class="form-control playlist-select"
+                (change)="onSelectChange($event)"
+              >
+                <option value="" disabled selected>Add to Playlist</option>
+                <option value="public">Public List</option>
+                <option value="private">Private List</option>
+              </select>
+            </div>
+            <p class="card-text">
+              <small class="text-muted"
+                >{{ movie.Year }} • {{ movie.Country }} • Rating -
+                <strong>{{ movie.imdbRating }}/10</strong></small
+              >
+            </p>
+            <p class="card-text"><strong>Actors:</strong> {{ movie.Actors }}</p>
+            <p class="card-text">
+              <strong>Director:</strong> {{ movie.Director }}
+            </p>
+            <p class="card-text">
+              <strong>Writers:</strong> {{ movie.Writer }}
+            </p>
+            <p class="card-text"><strong>Genre:</strong> {{ movie.Genre }}</p>
+            <p class="card-text">
+              <strong>Release Date:</strong> {{ movie.Released }}
+            </p>
+            <p class="card-text">
+              <strong>Box Office:</strong> {{ movie.BoxOffice }}
+            </p>
+            <p class="card-text">
+              <strong>Movie Runtime:</strong> {{ movie.Runtime }}
+            </p>
+            <p class="card-text">{{ movie.Plot }}</p>
+            <p class="card-text">
+              <small class="text-muted">Nominated for {{ movie.Awards }}</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

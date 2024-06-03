@@ -1,0 +1,79 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <a class="navbar-brand" href="#">Movie Hub</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/publiclist">Public List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/privatelist">Private List</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" (ngSubmit)="onSearch()">
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+        [(ngModel)]="searchQuery"
+        name="searchQuery"
+      />
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        Search
+      </button>
+    </form>
+    <button class="btn btn-danger my-2 my-sm-0 ml-auto" (click)="logout()">
+      Logout
+    </button>
+  </div>
+</nav>
+
+<!-- Cards -->
+<div class="container" style="background-color: whitesmoke">
+  <div class="row" *ngIf="movies.length > 0">
+    <div class="col-md-4" *ngFor="let movie of movies">
+      <div class="card mb-4 fixed-card-size">
+        <img
+          [src]="
+            movie.Poster !== 'N/A'
+              ? movie.Poster
+              : '../assets/imageNotFound.png'
+          "
+          class="card-img-top"
+          alt="Movie Poster"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.Title }}</h5>
+          <p class="card-text">Released: {{ movie.Year }}</p>
+          <p class="card-text">
+            <a
+              [routerLink]="['/moviedetails', movie.imdbID]"
+              class="btn btn-primary"
+              >Details</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Show a message if no movies found -->
+  <div class="search-movies" *ngIf="movies.length === 0">
+    <div class="center-message">
+      <p>Search to find the Movies</p>
+    </div>
+  </div>
+</div>

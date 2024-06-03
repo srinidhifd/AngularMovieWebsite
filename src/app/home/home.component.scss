@@ -1,0 +1,50 @@
+.custom-navbar {
+  background-color: #343a40; /* Dark background color */
+  color: white; /* White text color */
+
+  .navbar-brand,
+  .nav-link {
+    color: white !important; /* Ensure links are white */
+  }
+
+  .nav-link:hover {
+    color: #d4d4d4 !important; /* Lighter color on hover */
+  }
+
+  .navbar-toggler {
+    border-color: white; /* White border for the toggler */
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28white, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+}
+
+.container {
+  background-color: whitesmoke;
+  min-height: 100vh; /* Ensures the container takes full viewport height */
+}
+
+.fixed-card-size {
+  width: 100%;
+  max-width: 350px; /* Fix the width of the card */
+  height: 500px; /* Fix the height of the card */
+  margin: auto; /* Center the card horizontally */
+}
+
+.card-img-top {
+  height: 300px; /* Fix the height of the image */
+  object-fit: cover; /* Ensures the image covers the area */
+}
+
+.search-movies {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .center-message {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+  }
+}

@@ -1,0 +1,41 @@
+<!-- <p>sign-in works!</p> -->
+
+<div class="container">
+  <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <!-- Email input -->
+    <div data-mdb-input-init class="form-outline mb-4">
+      <label class="form-label" for="form2Example1">Email address</label>
+      <input
+        type="email"
+        formControlName="email"
+        id="form2Example1"
+        class="form-control"
+      />
+    </div>
+
+    <!-- Password input -->
+    <div data-mdb-input-init class="form-outline mb-4">
+      <label class="form-label" for="form2Example2">Password</label>
+      <input
+        type="password"
+        formControlName="password"
+        id="form2Example2"
+        class="form-control"
+      />
+    </div>
+
+    <!-- Submit button -->
+    <button
+      type="submit"
+      data-mdb-button-init
+      data-mdb-ripple-init
+      class="btn btn-primary btn-block mb-4"
+    >
+      Login
+    </button>
+  </form>
+  <!-- Register buttons -->
+  <div class="text-center">
+    <p>New User? <a routerLink="/register">Register</a></p>
+  </div>
+</div>

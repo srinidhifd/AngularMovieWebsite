@@ -1,0 +1,332 @@
+{
+  "register": [
+    {
+      "id": "ca09",
+      "fullName": "asdf",
+      "email": "asdf@gmail.com",
+      "userName": "asdf",
+      "password": "asdf",
+      "confirmPassword": "asdf",
+      "privateList": [
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "Rated": "PG-13",
+          "Released": "15 Jun 2005",
+          "Runtime": "140 min",
+          "Genre": "Action, Crime, Drama",
+          "Director": "Christopher Nolan",
+          "Writer": "Bob Kane, David S. Goyer, Christopher Nolan",
+          "Actors": "Christian Bale, Michael Caine, Ken Watanabe",
+          "Plot": "After witnessing his parents' death, Bruce learns the art of fighting to confront injustice. When he returns to Gotham as Batman, he must stop a secret society that intends to destroy the city.",
+          "Language": "English, Mandarin",
+          "Country": "United States, United Kingdom",
+          "Awards": "Nominated for 1 Oscar. 15 wins & 79 nominations total",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+          "Ratings": [
+            {
+              "Source": "Internet Movie Database",
+              "Value": "8.2/10"
+            },
+            {
+              "Source": "Rotten Tomatoes",
+              "Value": "85%"
+            },
+            {
+              "Source": "Metacritic",
+              "Value": "70/100"
+            }
+          ],
+          "Metascore": "70",
+          "imdbRating": "8.2",
+          "imdbVotes": "1,583,883",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "DVD": "09 Sep 2009",
+          "BoxOffice": "$206,863,479",
+          "Production": "N/A",
+          "Website": "N/A",
+          "Response": "True"
+        },
+        {
+          "Title": "RRR",
+          "Year": "2022",
+          "Rated": "Not Rated",
+          "Released": "25 Mar 2022",
+          "Runtime": "187 min",
+          "Genre": "Action, Adventure, Drama",
+          "Director": "S.S. Rajamouli",
+          "Writer": "Vijayendra Prasad, S.S. Rajamouli, Sai Madhav Burra",
+          "Actors": "N.T. Rama Rao Jr., Ram Charan, Ajay Devgn",
+          "Plot": "A fearless warrior on a perilous mission comes face to face with a steely cop serving British forces in this epic saga set in pre-independent India.",
+          "Language": "Hindi, Malayalam, Portuguese, Tamil, Kannada, Korean, Turkish, Spanish, Telugu, English",
+          "Country": "India",
+          "Awards": "Won 1 Oscar. 83 wins & 150 nominations total",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
+          "Ratings": [
+            {
+              "Source": "Internet Movie Database",
+              "Value": "7.8/10"
+            },
+            {
+              "Source": "Rotten Tomatoes",
+              "Value": "95%"
+            },
+            {
+              "Source": "Metacritic",
+              "Value": "83/100"
+            }
+          ],
+          "Metascore": "83",
+          "imdbRating": "7.8",
+          "imdbVotes": "166,559",
+          "imdbID": "tt8178634",
+          "Type": "movie",
+          "DVD": "22 May 2022",
+          "BoxOffice": "$15,156,051",
+          "Production": "N/A",
+          "Website": "N/A",
+          "Response": "True"
+        }
+      ],
+      "publicList": [
+        {
+          "Title": "Batman Begins",
+          "Year": "2005",
+          "Rated": "PG-13",
+          "Released": "15 Jun 2005",
+          "Runtime": "140 min",
+          "Genre": "Action, Crime, Drama",
+          "Director": "Christopher Nolan",
+          "Writer": "Bob Kane, David S. Goyer, Christopher Nolan",
+          "Actors": "Christian Bale, Michael Caine, Ken Watanabe",
+          "Plot": "After witnessing his parents' death, Bruce learns the art of fighting to confront injustice. When he returns to Gotham as Batman, he must stop a secret society that intends to destroy the city.",
+          "Language": "English, Mandarin",
+          "Country": "United States, United Kingdom",
+          "Awards": "Nominated for 1 Oscar. 15 wins & 79 nominations total",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+          "Ratings": [
+            {
+              "Source": "Internet Movie Database",
+              "Value": "8.2/10"
+            },
+            {
+              "Source": "Rotten Tomatoes",
+              "Value": "85%"
+            },
+            {
+              "Source": "Metacritic",
+              "Value": "70/100"
+            }
+          ],
+          "Metascore": "70",
+          "imdbRating": "8.2",
+          "imdbVotes": "1,583,883",
+          "imdbID": "tt0372784",
+          "Type": "movie",
+          "DVD": "09 Sep 2009",
+          "BoxOffice": "$206,863,479",
+          "Production": "N/A",
+          "Website": "N/A",
+          "Response": "True"
+        },
+        {
+          "Title": "RRR",
+          "Year": "2022",
+          "Rated": "Not Rated",
+          "Released": "25 Mar 2022",
+          "Runtime": "187 min",
+          "Genre": "Action, Adventure, Drama",
+          "Director": "S.S. Rajamouli",
+          "Writer": "Vijayendra Prasad, S.S. Rajamouli, Sai Madhav Burra",
+          "Actors": "N.T. Rama Rao Jr., Ram Charan, Ajay Devgn",
+          "Plot": "A fearless warrior on a perilous mission comes face to face with a steely cop serving British forces in this epic saga set in pre-independent India.",
+          "Language": "Hindi, Malayalam, Portuguese, Tamil, Kannada, Korean, Turkish, Spanish, Telugu, English",
+          "Country": "India",
+          "Awards": "Won 1 Oscar. 83 wins & 150 nominations total",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
+          "Ratings": [
+            {
+              "Source": "Internet Movie Database",
+              "Value": "7.8/10"
+            },
+            {
+              "Source": "Rotten Tomatoes",
+              "Value": "95%"
+            },
+            {
+              "Source": "Metacritic",
+              "Value": "83/100"
+            }
+          ],
+          "Metascore": "83",
+          "imdbRating": "7.8",
+          "imdbVotes": "166,559",
+          "imdbID": "tt8178634",
+          "Type": "movie",
+          "DVD": "22 May 2022",
+          "BoxOffice": "$15,156,051",
+          "Production": "N/A",
+          "Website": "N/A",
+          "Response": "True"
+        }
+      ]
+    },
+    {
+      "id": "9f25",
+      "fullName": "qwerty",
+      "email": "qwerty@gmail.com",
+      "userName": "qwerty",
+      "password": "qwerty",
+      "confirmPassword": "qwerty",
+      "privateList": [
+        {
+          "Title": "Kabhi Khushi Kabhie Gham...",
+          "Year": "2001",
+          "Rated": "Not Rated",
+          "Released": "14 Dec 2001",
+          "Runtime": "210 min",
+          "Genre": "Drama, Musical, Romance",
+          "Director": "Karan Johar",
+          "Writer": "Karan Johar, Sheena Parikh",
+          "Actors": "Shah Rukh Khan, Kajol, Amitabh Bachchan",
+          "Plot": "After marrying a poor woman, rich Rahul is disowned by his father and moves to London to build a new life. Years later, his now-grown younger brother Rohan embarks on a mission to bring Rahul back home and reunite the family.",
+          "Language": "Hindi, English, Punjabi, Urdu",
+          "Country": "India, United Kingdom",
+          "Awards": "30 wins & 48 nominations",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTQ5Nzc3NzAtMzZlMS00ZWJjLWIxMGMtNDU4ZTQ1NmNjMjc5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
+          "Ratings": [
+            {
+              "Source": "Internet Movie Database",
+              "Value": "7.4/10"
+            },
+            {
+              "Source": "Rotten Tomatoes",
+              "Value": "100%"
+            }
+          ],
+          "Metascore": "N/A",
+          "imdbRating": "7.4",
+          "imdbVotes": "55,255",
+          "imdbID": "tt0248126",
+          "Type": "movie",
+          "DVD": "27 Jun 2015",
+          "BoxOffice": "$2,902,000",
+          "Production": "N/A",
+          "Website": "N/A",
+          "Response": "True"
+        },
+        {
+          "Title": "Yeh Jawaani Hai Deewani",
+          "Year": "2013",
+          "Rated": "Not Rated",
+          "Released": "31 May 2013",
+          "Runtime": "160 min",
+          "Genre": "Comedy, Drama, Musical",
+          "Director": "Ayan Mukerji",
+          "Writer": "Hussain Dalal, Ayan Mukerji",
+          "Actors": "Ranbir Kapoor, Deepika Padukone, Aditya Roy Kapoor",
+          "Plot": "Kabir and Naina bond during a trekking trip. Before Naina can express herself, Kabir leaves India to pursue his career. They meet again years later, but he still cherishes his dreams more than bonds.",
+          "Language": "Hindi, English, French",
+          "Country": "India",
+          "Awards": "24 wins & 96 nominations",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BODA4MjM2ODk4OF5BMl5BanBnXkFtZTcwNDgzODk1OQ@@._V1_SX300.jpg",
+          "Ratings": [
+            {
+              "Source": "Internet Movie Database",
+              "Value": "7.2/10"
+            },
+            {
+              "Source": "Rotten Tomatoes",
+              "Value": "70%"
+            }
+          ],
+          "Metascore": "N/A",
+          "imdbRating": "7.2",
+          "imdbVotes": "50,846",
+          "imdbID": "tt2178470",
+          "Type": "movie",
+          "DVD": "30 Nov 2016",
+          "BoxOffice": "$3,827,466",
+          "Production": "N/A",
+          "Website": "N/A",
+          "Response": "True"
+        }
+      ],
+      "publicList": [
+        {
+          "Title": "Kabhi Khushi Kabhie Gham...",
+          "Year": "2001",
+          "Rated": "Not Rated",
+          "Released": "14 Dec 2001",
+          "Runtime": "210 min",
+          "Genre": "Drama, Musical, Romance",
+          "Director": "Karan Johar",
+          "Writer": "Karan Johar, Sheena Parikh",
+          "Actors": "Shah Rukh Khan, Kajol, Amitabh Bachchan",
+          "Plot": "After marrying a poor woman, rich Rahul is disowned by his father and moves to London to build a new life. Years later, his now-grown younger brother Rohan embarks on a mission to bring Rahul back home and reunite the family.",
+          "Language": "Hindi, English, Punjabi, Urdu",
+          "Country": "India, United Kingdom",
+          "Awards": "30 wins & 48 nominations",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTQ5Nzc3NzAtMzZlMS00ZWJjLWIxMGMtNDU4ZTQ1NmNjMjc5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
+          "Ratings": [
+            {
+              "Source": "Internet Movie Database",
+              "Value": "7.4/10"
+            },
+            {
+              "Source": "Rotten Tomatoes",
+              "Value": "100%"
+            }
+          ],
+          "Metascore": "N/A",
+          "imdbRating": "7.4",
+          "imdbVotes": "55,255",
+          "imdbID": "tt0248126",
+          "Type": "movie",
+          "DVD": "27 Jun 2015",
+          "BoxOffice": "$2,902,000",
+          "Production": "N/A",
+          "Website": "N/A",
+          "Response": "True"
+        },
+        {
+          "Title": "Yeh Jawaani Hai Deewani",
+          "Year": "2013",
+          "Rated": "Not Rated",
+          "Released": "31 May 2013",
+          "Runtime": "160 min",
+          "Genre": "Comedy, Drama, Musical",
+          "Director": "Ayan Mukerji",
+          "Writer": "Hussain Dalal, Ayan Mukerji",
+          "Actors": "Ranbir Kapoor, Deepika Padukone, Aditya Roy Kapoor",
+          "Plot": "Kabir and Naina bond during a trekking trip. Before Naina can express herself, Kabir leaves India to pursue his career. They meet again years later, but he still cherishes his dreams more than bonds.",
+          "Language": "Hindi, English, French",
+          "Country": "India",
+          "Awards": "24 wins & 96 nominations",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BODA4MjM2ODk4OF5BMl5BanBnXkFtZTcwNDgzODk1OQ@@._V1_SX300.jpg",
+          "Ratings": [
+            {
+              "Source": "Internet Movie Database",
+              "Value": "7.2/10"
+            },
+            {
+              "Source": "Rotten Tomatoes",
+              "Value": "70%"
+            }
+          ],
+          "Metascore": "N/A",
+          "imdbRating": "7.2",
+          "imdbVotes": "50,846",
+          "imdbID": "tt2178470",
+          "Type": "movie",
+          "DVD": "30 Nov 2016",
+          "BoxOffice": "$3,827,466",
+          "Production": "N/A",
+          "Website": "N/A",
+          "Response": "True"
+        }
+      ]
+    }
+  ]
+}
