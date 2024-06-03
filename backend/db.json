@@ -9,46 +9,6 @@
       "confirmPassword": "asdf",
       "privateList": [
         {
-          "Title": "Batman Begins",
-          "Year": "2005",
-          "Rated": "PG-13",
-          "Released": "15 Jun 2005",
-          "Runtime": "140 min",
-          "Genre": "Action, Crime, Drama",
-          "Director": "Christopher Nolan",
-          "Writer": "Bob Kane, David S. Goyer, Christopher Nolan",
-          "Actors": "Christian Bale, Michael Caine, Ken Watanabe",
-          "Plot": "After witnessing his parents' death, Bruce learns the art of fighting to confront injustice. When he returns to Gotham as Batman, he must stop a secret society that intends to destroy the city.",
-          "Language": "English, Mandarin",
-          "Country": "United States, United Kingdom",
-          "Awards": "Nominated for 1 Oscar. 15 wins & 79 nominations total",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-          "Ratings": [
-            {
-              "Source": "Internet Movie Database",
-              "Value": "8.2/10"
-            },
-            {
-              "Source": "Rotten Tomatoes",
-              "Value": "85%"
-            },
-            {
-              "Source": "Metacritic",
-              "Value": "70/100"
-            }
-          ],
-          "Metascore": "70",
-          "imdbRating": "8.2",
-          "imdbVotes": "1,583,883",
-          "imdbID": "tt0372784",
-          "Type": "movie",
-          "DVD": "09 Sep 2009",
-          "BoxOffice": "$206,863,479",
-          "Production": "N/A",
-          "Website": "N/A",
-          "Response": "True"
-        },
-        {
           "Title": "RRR",
           "Year": "2022",
           "Rated": "Not Rated",
@@ -84,6 +44,42 @@
           "Type": "movie",
           "DVD": "22 May 2022",
           "BoxOffice": "$15,156,051",
+          "Production": "N/A",
+          "Website": "N/A",
+          "Response": "True"
+        },
+        {
+          "Title": "Kabhi Alvida Naa Kehna",
+          "Year": "2006",
+          "Rated": "Not Rated",
+          "Released": "11 Aug 2006",
+          "Runtime": "193 min",
+          "Genre": "Drama, Romance",
+          "Director": "Karan Johar",
+          "Writer": "Karan Johar, Shibani Bathija, Niranjan Iyengar",
+          "Actors": "Shah Rukh Khan, Rani Mukerji, Amitabh Bachchan",
+          "Plot": "Dev, a former football player is married to Rhea, a successful fashion editor. Maya is a kindergarten teacher who is married to Rishi, an outgoing event planner. These couples' lives intersect and they each question their own marr...",
+          "Language": "Hindi, English",
+          "Country": "India",
+          "Awards": "16 wins & 40 nominations",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNjllNTM0ZWQtMDMyOS00Yzc5LWFlNGYtNTA3MzY0ZjY5YWRiXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
+          "Ratings": [
+            {
+              "Source": "Internet Movie Database",
+              "Value": "6.0/10"
+            },
+            {
+              "Source": "Rotten Tomatoes",
+              "Value": "58%"
+            }
+          ],
+          "Metascore": "N/A",
+          "imdbRating": "6.0",
+          "imdbVotes": "21,693",
+          "imdbID": "tt0449999",
+          "Type": "movie",
+          "DVD": "17 Nov 2016",
+          "BoxOffice": "$3,275,444",
           "Production": "N/A",
           "Website": "N/A",
           "Response": "True"
@@ -131,41 +127,37 @@
           "Response": "True"
         },
         {
-          "Title": "RRR",
-          "Year": "2022",
+          "Title": "Kabhi Alvida Naa Kehna",
+          "Year": "2006",
           "Rated": "Not Rated",
-          "Released": "25 Mar 2022",
-          "Runtime": "187 min",
-          "Genre": "Action, Adventure, Drama",
-          "Director": "S.S. Rajamouli",
-          "Writer": "Vijayendra Prasad, S.S. Rajamouli, Sai Madhav Burra",
-          "Actors": "N.T. Rama Rao Jr., Ram Charan, Ajay Devgn",
-          "Plot": "A fearless warrior on a perilous mission comes face to face with a steely cop serving British forces in this epic saga set in pre-independent India.",
-          "Language": "Hindi, Malayalam, Portuguese, Tamil, Kannada, Korean, Turkish, Spanish, Telugu, English",
+          "Released": "11 Aug 2006",
+          "Runtime": "193 min",
+          "Genre": "Drama, Romance",
+          "Director": "Karan Johar",
+          "Writer": "Karan Johar, Shibani Bathija, Niranjan Iyengar",
+          "Actors": "Shah Rukh Khan, Rani Mukerji, Amitabh Bachchan",
+          "Plot": "Dev, a former football player is married to Rhea, a successful fashion editor. Maya is a kindergarten teacher who is married to Rishi, an outgoing event planner. These couples' lives intersect and they each question their own marr...",
+          "Language": "Hindi, English",
           "Country": "India",
-          "Awards": "Won 1 Oscar. 83 wins & 150 nominations total",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
+          "Awards": "16 wins & 40 nominations",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNjllNTM0ZWQtMDMyOS00Yzc5LWFlNGYtNTA3MzY0ZjY5YWRiXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
           "Ratings": [
             {
               "Source": "Internet Movie Database",
-              "Value": "7.8/10"
+              "Value": "6.0/10"
             },
             {
               "Source": "Rotten Tomatoes",
-              "Value": "95%"
-            },
-            {
-              "Source": "Metacritic",
-              "Value": "83/100"
+              "Value": "58%"
             }
           ],
-          "Metascore": "83",
-          "imdbRating": "7.8",
-          "imdbVotes": "166,559",
-          "imdbID": "tt8178634",
+          "Metascore": "N/A",
+          "imdbRating": "6.0",
+          "imdbVotes": "21,693",
+          "imdbID": "tt0449999",
           "Type": "movie",
-          "DVD": "22 May 2022",
-          "BoxOffice": "$15,156,051",
+          "DVD": "17 Nov 2016",
+          "BoxOffice": "$3,275,444",
           "Production": "N/A",
           "Website": "N/A",
           "Response": "True"
@@ -291,37 +283,106 @@
           "Response": "True"
         },
         {
-          "Title": "Yeh Jawaani Hai Deewani",
-          "Year": "2013",
+          "Title": "Always Kabhi Kabhi",
+          "Year": "2011",
           "Rated": "Not Rated",
-          "Released": "31 May 2013",
-          "Runtime": "160 min",
-          "Genre": "Comedy, Drama, Musical",
-          "Director": "Ayan Mukerji",
-          "Writer": "Hussain Dalal, Ayan Mukerji",
-          "Actors": "Ranbir Kapoor, Deepika Padukone, Aditya Roy Kapoor",
-          "Plot": "Kabir and Naina bond during a trekking trip. Before Naina can express herself, Kabir leaves India to pursue his career. They meet again years later, but he still cherishes his dreams more than bonds.",
-          "Language": "Hindi, English, French",
+          "Released": "17 Jun 2011",
+          "Runtime": "126 min",
+          "Genre": "Comedy, Crime, Drama",
+          "Director": "Roshan Abbas",
+          "Writer": "Roshan Abbas, Kanika Dhillon, Ishita Moitra",
+          "Actors": "Samir Chandra, Lillete Dubey, Satyajeet Dubey",
+          "Plot": "A story centered on four students coming of age during a year at their school, St. Marks.",
+          "Language": "Hindi, English",
           "Country": "India",
-          "Awards": "24 wins & 96 nominations",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BODA4MjM2ODk4OF5BMl5BanBnXkFtZTcwNDgzODk1OQ@@._V1_SX300.jpg",
+          "Awards": "3 nominations",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOWVkNWM1ZTYtOTU3My00OGIxLWI2MmEtZmYyZGIxMTIwY2MzXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
           "Ratings": [
             {
               "Source": "Internet Movie Database",
-              "Value": "7.2/10"
-            },
-            {
-              "Source": "Rotten Tomatoes",
-              "Value": "70%"
+              "Value": "4.2/10"
             }
           ],
           "Metascore": "N/A",
-          "imdbRating": "7.2",
-          "imdbVotes": "50,846",
-          "imdbID": "tt2178470",
+          "imdbRating": "4.2",
+          "imdbVotes": "1,407",
+          "imdbID": "tt1937092",
           "Type": "movie",
           "DVD": "30 Nov 2016",
-          "BoxOffice": "$3,827,466",
+          "BoxOffice": "$21,381",
+          "Production": "N/A",
+          "Website": "N/A",
+          "Response": "True"
+        }
+      ]
+    },
+    {
+      "id": "a7f5",
+      "fullName": "Ram",
+      "email": "ram@gmail.com",
+      "userName": "ram",
+      "password": "ram",
+      "confirmPassword": "ram",
+      "privateList": [
+        {
+          "Title": "Kyunki Saas Bhi Kabhi Bahu Thi",
+          "Year": "2000–2008",
+          "Rated": "N/A",
+          "Released": "03 Jul 2000",
+          "Runtime": "2 min",
+          "Genre": "Comedy, Drama, Family",
+          "Director": "N/A",
+          "Writer": "Ekta Kapoor",
+          "Actors": "Smriti Malhotra-Irani, Ronit Roy, Amar Upadhyay",
+          "Plot": "A mother-in-law's struggle to put up with her three bahu's. The three bahu's have grown up sons. The bahu's sons start to get involved with having girlfriends and the bahu's try and break their relationships up.",
+          "Language": "Hindi",
+          "Country": "India",
+          "Awards": "45 wins & 25 nominations",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNDFkNGMzMTktMGIyNS00MDc0LTg3YWItZGI2Y2JkYTQ5YzIxXkEyXkFqcGdeQXVyNzM4MjU3NzY@._V1_SX300.jpg",
+          "Ratings": [
+            {
+              "Source": "Internet Movie Database",
+              "Value": "1.6/10"
+            }
+          ],
+          "Metascore": "N/A",
+          "imdbRating": "1.6",
+          "imdbVotes": "1,838",
+          "imdbID": "tt0278212",
+          "Type": "series",
+          "totalSeasons": "1",
+          "Response": "True"
+        }
+      ],
+      "publicList": [
+        {
+          "Title": "Salaar",
+          "Year": "2023",
+          "Rated": "N/A",
+          "Released": "22 Dec 2023",
+          "Runtime": "175 min",
+          "Genre": "Action, Crime, Drama",
+          "Director": "Prashanth Neel",
+          "Writer": "Sandeep Reddy Bandla, Choudary Hanuman, Prashanth Neel",
+          "Actors": "Prabhas, Prithviraj Sukumaran, Shruti Haasan",
+          "Plot": "The fate of a violently contested kingdom hangs on the fraught bond between two friends-turned-foes in this saga of power, bloodshed and betrayal.",
+          "Language": "Hindi, Malayalam, Kannada, Tamil, Telugu",
+          "Country": "India",
+          "Awards": "1 win & 5 nominations",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMmU4ZTM0MTctZTQ3Ny00YjZmLWFhNzEtOGYzMDk0ZjcyNmYzXkEyXkFqcGdeQXVyMTUyNjIwMDEw._V1_SX300.jpg",
+          "Ratings": [
+            {
+              "Source": "Internet Movie Database",
+              "Value": "6.5/10"
+            }
+          ],
+          "Metascore": "N/A",
+          "imdbRating": "6.5",
+          "imdbVotes": "62,458",
+          "imdbID": "tt13927994",
+          "Type": "movie",
+          "DVD": "N/A",
+          "BoxOffice": "$8,929,282",
           "Production": "N/A",
           "Website": "N/A",
           "Response": "True"
