@@ -28,7 +28,7 @@ export class SignInComponent implements OnInit {
 
   loginUser() {
     console.log(this.loginForm.value);
-    this.http.get<any>('http://localhost:3000/register').subscribe(
+    this.http.get<any>('https://angularmoviewebsite.onrender.com/register').subscribe(
       (result) => {
         const user = result.find((a: any) => {
           return (

@@ -34,7 +34,7 @@ export class RegisterComponent implements OnInit {
 
   registerUser() {
     this.http
-      .post<any>('http://localhost:3000/register', this.registerForm.value)
+      .post<any>('https://angularmoviewebsite.onrender.com/register', this.registerForm.value)
       .subscribe(
         (result) => {
           alert('Register Successfull !!');
