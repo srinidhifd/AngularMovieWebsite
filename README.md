@@ -1,9 +1,9 @@
 # MovieLibrary
-## clone this repo 
-## in root folder - run "npm install"
-## in backend folder - run "npm install"
-## In root folder - run "ng serve"
-## In Backend folder - "json-server --watch db.json"
+## 1. Clone this repo 
+## 2. in root folder - run "npm install"
+## 3. in backend folder - run "npm install"
+## 4. in root folder - run "ng serve"
+## 5. in Backend folder - "json-server --watch db.json"
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
 
