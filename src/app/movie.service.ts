@@ -8,7 +8,7 @@ import { tap, switchMap, map } from 'rxjs/operators';
 })
 export class MovieService {
   private apiKey = 'c2a68627';
-  private apiUrl = `http://www.omdbapi.com/?apikey=${this.apiKey}&`;
+  private apiUrl = `https://www.omdbapi.com/?apikey=${this.apiKey}&`;
   private dbUrl = 'https://angularmoviewebsite.onrender.com'; // URL to your db.json server
 
   constructor(private http: HttpClient) {}
