@@ -4,7 +4,7 @@
 ### 2. in root folder - run "npm install"
 ### 3. in backend folder - run "npm install"
 ### 4. in root folder - run "ng serve"
-### 5. in Backend folder - "json-server --watch db.json"
+### 5. in Backend folder - "json-server --watch db.json" or "npx json-server --watch db.json"
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
 
