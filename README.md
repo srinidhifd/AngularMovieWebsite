@@ -1,5 +1,6 @@
 # MovieLibrary
 ## Instructions to Clone and Run this Project 
+## -- Please allow up to 50 seconds for the backend to respond after your initial login or registration request. This is due to the backend being hosted on Render, which requires some time to start up on the first request. Thank you for your patience --
 ### 1. Clone this repo 
 ### 2. in root folder - run the command "npm install"
 ### 3. in backend folder - run the command "npm install"
