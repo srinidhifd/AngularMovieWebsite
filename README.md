@@ -6,7 +6,7 @@ Clone this repository to your local machine using the following command in your 
    ```bash
    git clone https://github.com/srinidhifd/AngularMovieWebsite.git
    ```
-### 2. In the root folder - Run the below command 
+### 2. In the Root folder - Run the command 
  ```bash
    npm install
    ```
