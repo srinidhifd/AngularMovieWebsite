@@ -1,7 +1,11 @@
 # MovieLibrary
 ## Instructions to Clone and Run this Project 
 ## -- Please allow up to 50 seconds for the backend to respond after your initial login or registration request. This is due to the backend being hosted on Render, which requires some time to start up on the first request. Thank you for your patience --
-### 1. Clone this repo 
+### 1. Clone this repo -
+Clone this repository to your local machine using the following command in your terminal.
+   ```bash
+   git clone [https://github.com/<your-github-username>/RAPIDOC-HEALTHCARE-WEBSITE](https://github.com/srinidhifd/AngularMovieWebsite.git)
+   ```
 ### 2. in root folder - run the command "npm install"
 ### 3. in backend folder - run the command "npm install"
 ### 4. in root folder - run the run "ng serve"
