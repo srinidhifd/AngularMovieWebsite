@@ -4,7 +4,7 @@
 ### 1. Clone this repo -
 Clone this repository to your local machine using the following command in your terminal.
    ```bash
-   git clone [https://github.com/<your-github-username>/RAPIDOC-HEALTHCARE-WEBSITE](https://github.com/srinidhifd/AngularMovieWebsite.git)
+   git clone https://github.com/srinidhifd/AngularMovieWebsite.git
    ```
 ### 2. in root folder - run the command "npm install"
 ### 3. in backend folder - run the command "npm install"
