@@ -6,10 +6,26 @@ Clone this repository to your local machine using the following command in your 
    ```bash
    git clone https://github.com/srinidhifd/AngularMovieWebsite.git
    ```
-### 2. in root folder - run the command "npm install"
-### 3. in backend folder - run the command "npm install"
-### 4. in root folder - run the run "ng serve"
-### 5. in Backend folder - run the command "json-server --watch db.json" or "npx json-server --watch db.json"
+### 2. In the root folder - Run the below command 
+ ```bash
+   npm install
+   ```
+### 3. In Backend folder - Run the command
+```bash
+   npm install
+   ```
+### 4. In Root folder - Run the command
+```bash
+   ng serve -o
+   ```
+### 5. In Backend folder - Run the command 
+```bash
+   json-server --watch db.json
+   ```
+OR
+```bash
+   npx json-server --watch db.json
+   ```
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
 
