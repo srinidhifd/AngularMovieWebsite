@@ -1,14 +1,12 @@
-<div class="container mt-4">
+<div class="container-fluid public-list-container bg">
   <div class="row mb-3">
     <div class="col-12 text-center">
-      <button class="btn btn-success back-home-btn" routerLink="/home">
-        <i class="bi bi-arrow-left-circle"></i> Back to Home
-      </button>
+      <h1 class="page-title">Public List</h1>
     </div>
   </div>
-  <div class="row" *ngIf="publicList.length > 0">
-    <div class="col-md-4" *ngFor="let movie of publicList">
-      <div class="card mb-4 shadow-sm">
+  <div class="row justify-content-center" *ngIf="publicList.length > 0">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" *ngFor="let movie of publicList">
+      <div class="card mb-4 shadow-lg glass-card">
         <img
           [src]="
             movie.Poster !== 'N/A' ? movie.Poster : 'assets/imageNotFound.png'
@@ -24,9 +22,9 @@
               <strong>{{ movie.imdbRating }}/10</strong></small
             >
           </p>
-          <div class="d-flex justify-content-between align-items-center mt-3">
+          <div class="d-flex justify-content-between align-items-center mt-3 gap-2">
             <button
-              class="btn btn-primary"
+              class="btn btn-primary details-btn"
               [routerLink]="['/moviedetails', movie.imdbID]"
             >
               Details
@@ -47,4 +45,7 @@
   <div class="text-center mt-5" *ngIf="publicList.length === 0">
     <p>No movies found</p>
   </div>
+  <button class="btn btn-success back-home-btn" routerLink="/home">
+    <i class="bi bi-arrow-left-circle"></i> Back to Home
+  </button>
 </div>
