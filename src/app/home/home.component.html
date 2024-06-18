@@ -1,6 +1,6 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg custom-navbar">
-  <a class="navbar-brand" href="#">Movie Hub</a>
+  <a class="navbar-brand" href="">Movie Hub</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -35,17 +35,31 @@
         Search
       </button>
     </form>
-    <button class="btn btn-danger my-2 my-sm-0 ml-auto" (click)="logout()">
+    <div class="navbar-text ml-auto">
+      Welcome, {{ currentUser.userName }}
+    </div>
+    <button class="btn btn-danger my-2 my-sm-0 ml-2" (click)="logout()">
       Logout
     </button>
   </div>
 </nav>
 
-<!-- Cards -->
-<div class="container" style="background-color: whitesmoke">
+<!-- Hero Section (Displayed initially) -->
+<div *ngIf="!searched" class="hero-section">
+  <div class="hero-content">
+    <h1>Welcome to Movie Hub</h1>
+    <p>Discover and track your favorite movies</p>
+  </div>
+</div>
+
+<!-- Cards (Displayed after search) -->
+<div *ngIf="searched" class="container-fluid movie-container">
+  <div class="search-info">
+    <p>Showing results for "{{ searchQuery }}"</p>
+  </div>
   <div class="row" *ngIf="movies.length > 0">
-    <div class="col-md-4" *ngFor="let movie of movies">
-      <div class="card mb-4 fixed-card-size">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" *ngFor="let movie of movies">
+      <div class="card mb-4 fixed-card-size glass-card shadow-lg">
         <img
           [src]="
             movie.Poster !== 'N/A'
@@ -58,22 +72,19 @@
         <div class="card-body">
           <h5 class="card-title">{{ movie.Title }}</h5>
           <p class="card-text">Released: {{ movie.Year }}</p>
-          <p class="card-text">
-            <a
-              [routerLink]="['/moviedetails', movie.imdbID]"
-              class="btn btn-primary"
-              >Details</a
-            >
-          </p>
+          <a
+            [routerLink]="['/moviedetails', movie.imdbID]"
+            class="btn btn-primary details-btn"
+          >Details</a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Show a message if no movies found -->
-  <div class="search-movies" *ngIf="movies.length === 0">
+  <div class="search-movies" *ngIf="movies.length === 0 && searched">
     <div class="center-message">
-      <p>Search to find the Movies</p>
+      <p>No movies found. Try a different search.</p>
     </div>
   </div>
 </div>

@@ -11,6 +11,8 @@ import { AuthService } from '../auth.service';
 export class HomeComponent implements OnInit {
   movies: any[] = [];
   searchQuery: string = '';
+  searched: boolean = false;
+  currentUser: any;
 
   constructor(
     private movieService: MovieService,
@@ -19,11 +21,16 @@ export class HomeComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // this.searchMovies('Batman');
-    // this.movieService.getMovieDetails('tt0372784').subscribe();
+    this.currentUser = this.authService.getCurrentUser();
   }
 
   searchMovies(query: string): void {
+    if (query.trim() === '') {
+      this.searched = false;
+      return;
+    }
+
+    this.searched = true;
     this.movieService.searchMovies(query).subscribe((response) => {
       if (response && response.Search) {
         this.movies = response.Search;

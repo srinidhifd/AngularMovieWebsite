@@ -18,23 +18,125 @@
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28white, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
+
+  .navbar-text {
+    color: #00acc1; /* Cyan color for user welcome text */
+    font-weight: bold;
+  }
+
+  .btn-danger {
+    background-color: #ff5252; /* Red logout button */
+  }
 }
 
-.container {
-  background-color: whitesmoke;
+.hero-section {
+  background: url('../../assets/bg3.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  .hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: #d4d4d4;
+    }
+  }
+}
+
+.movie-container {
+  background: url('../../assets/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
   min-height: 100vh; /* Ensures the container takes full viewport height */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.search-info {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .fixed-card-size {
   width: 100%;
-  max-width: 350px; /* Fix the width of the card */
-  height: 500px; /* Fix the height of the card */
+  max-width: 350px;
+  height: 500px;
   margin: auto; /* Center the card horizontally */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  transition: transform 0.2s ease-in-out; /* Add a smooth transformation effect */
+}
+
+.fixed-card-size:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
 }
 
 .card-img-top {
   height: 300px; /* Fix the height of the image */
   object-fit: cover; /* Ensures the image covers the area */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #d4d4d4;
+  text-align: center;
+}
+
+.details-btn {
+  background-color: #1db954; /* Custom button color */
+  border: none;
+  color: white;
+  border-radius: 15px;
+  width: 100%; /* Make button full width */
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Center text */
+}
+
+.details-btn:hover {
+  background-color: #1ed760;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .search-movies {
@@ -46,5 +148,33 @@
 
   .center-message {
     font-size: 1.5rem; /* Adjust the font size as needed */
+    color: #ffffff;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 70vh;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .fixed-card-size {
+    height: auto;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+
+  .navbar-text {
+    display: none; /* Hide the welcome text on small screens */
   }
 }
