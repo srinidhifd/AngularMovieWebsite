@@ -1,16 +1,18 @@
 .bg {
   font-family: 'Roboto', sans-serif;
-  background-color: #f0f0f0;
   color: #333;
   position: relative;
-  background: url(../../assets/bg.jpg);
+  background: url("https://images.unsplash.com/photo-1607499699372-7bb722dff7e2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-top: 0px;
+  color: white;
 }
 
-.container {
-  margin-top: 20px;
-}
 
 .page-title {
+  margin-top: 20px;
   font-size: 2rem;
   margin-bottom: 20px;
 }
@@ -41,7 +43,8 @@
   backdrop-filter: blur(10px);
   border: none;
   height: auto;
-  color: #333;
+  // color: #333;
+  color: white;
   border-radius: 15px;
   overflow: hidden;
 }
