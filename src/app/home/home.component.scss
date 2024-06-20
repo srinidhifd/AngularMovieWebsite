@@ -15,8 +15,8 @@
     border-color: white; /* White border for the toggler */
   }
 
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28white, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  .bi-list {
+    color: white; /* Ensure the toggler icon is white */
   }
 
   .navbar-text {
@@ -155,7 +155,7 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .hero-section {
-    height: 70vh;
+    height: 92vh;
 
     h1 {
       font-size: 2.5rem;
@@ -171,10 +171,17 @@
   }
 
   .card-img-top {
-    height: 200px;
+    object-fit: contain;
+    // height: 200px;
+    width: 100%;
   }
 
   .navbar-text {
     display: none; /* Hide the welcome text on small screens */
+  }
+
+  .navbar-collapse {
+    background: rgba(52, 58, 64, 0.9); /* Add background to collapse menu */
+    padding: 10px;
   }
 }

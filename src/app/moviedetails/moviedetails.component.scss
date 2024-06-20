@@ -105,6 +105,17 @@
 }
 
 @media (max-width: 768px) {
+  .bg {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    position: relative;
+    background: url("https://images.unsplash.com/photo-1607499699372-7bb722dff7e2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-top: 0px;
+    color: white;
+  }
   .card {
     flex-direction: column;
   }
@@ -114,8 +125,10 @@
   }
 
   .back-home-btn {
-    font-size: 1rem;
-    padding: 8px 16px;
+    font-size: 0.8rem;
+    padding: 0px;
+    width: 90px;
+    border-radius: 8px;
   }
 
   .page-title {
