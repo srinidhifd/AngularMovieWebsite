@@ -1,4 +1,4 @@
-# MovieLibrary
+# Movie Library Web Application
 ## Instructions to Clone and Run this Project 
 ## -- Please allow up to 50 seconds for the backend to respond after your initial login or registration request. This is due to the backend being hosted on Render, which requires some time to start up on the first request. Thank you for your patience --
 ### 1. Clone this repo -
@@ -10,7 +10,7 @@ Clone this repository to your local machine using the following command in your 
  ```bash
    npm install
    ```
-### 3. In Backend folder - Run the command
+### 3. In Backend folder - Run the command (To Navigate to the backend folder use command - cd backend)
 ```bash
    npm install
    ```
